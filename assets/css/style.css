@@ -9262,6 +9262,7 @@ input:focus {
 .logo {
   background: #FFFFFF;
   border: 3px solid #1E4464;
+  border-radius: 3em;
   position: relative;
   display: inline-block;
   cursor: pointer;
