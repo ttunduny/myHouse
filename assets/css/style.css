@@ -9498,7 +9498,8 @@ input:focus {
 
 .btn, #main-menu-handle {
   position: relative;
-  background: #BFA249;
+  /*background: #BFA249;*/
+  background: #2cc36b;
   color: #FFFFFF;
   border: 0;
   -moz-border-radius: 0;
@@ -9538,7 +9539,8 @@ input[type="text"]:not([class*="select2"]), input[type="email"]:not([class*="sel
   color: #333333;
   font-size: 14px;
   border: 1px solid #d4d4d4;
-  border-bottom-color: #BFA249;
+  /*border-bottom-color: #BFA249;*/
+  border-bottom-color: #2cc36b;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
@@ -9575,7 +9577,8 @@ input[type="text"]:disabled, input[type="email"]:disabled, input[type="password"
     width: 20px;
     height: 20px;
     background: #FFFFFF;
-    border: 1px solid #BFA249;
+    /*border: 1px solid #BFA249;*/
+    border:1px solid #2cc36b;
     position: absolute;
     left: 1px;
     top: 12px; }
@@ -10064,7 +10067,8 @@ html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow {
       -webkit-box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #BFA249;
       box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #BFA249;
       background: #FFFFFF;
-      border: 1px solid #BFA249; }
+      /*border: 1px solid #BFA249; }*/
+      border: 1px solid #2cc36b; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Scada", Arial, Helvetica, sans-serif; }
@@ -10850,7 +10854,8 @@ img.mfp-img {
 
 #main-header {
   background: #FFFFFF;
-  border-bottom: 3px solid #BFA249;
+  /*border-bottom: 3px solid #BFA249;*/
+  border-bottom: 3px solid #2cc36b;
   position: fixed;
   left: 0;
   top: 0;
@@ -11223,7 +11228,7 @@ img.mfp-img {
   #property-search-container .property-search-form {
     position: absolute;
     left: 0;
-    top: -50%;
+    top: 50%;
     border: 1px solid #d4d4d4;
     background: #FFFFFF;
     width: 100%;
@@ -13030,12 +13035,13 @@ body.testimonials .testimonials-main-container {
   margin: 0 auto;
   padding: 30px;
   background: #FFFFFF;
-  border: 1px solid #e6e6e6; }
+  border: 1px solid #2ecc71; }
+  /*border: 1px solid #e6e6e6; }*/
   #login-form h2, #register-form h2 {
     margin: 0 0 30px; }
   #login-form form .search-fields, #register-form form .search-fields {
     padding: 10px 0; }
-    #login-form form .search-fields input, #register-form form .search-fields input {
+    #login-form form .search-fields input, #register-form form .search-fields input,select {
       width: 100%; }
   #login-form form .search-button-container, #register-form form .search-button-container {
     padding-top: 10px; }

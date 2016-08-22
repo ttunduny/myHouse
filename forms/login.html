@@ -1,14 +1,65 @@
 <div id="login-form" class="login-form">
     <h2 class="hsq-heading type-2">Login Form</h2>
-    <form class="search-form" action="#"><!-- Do Not remove the classes -->
+    <form class="search-form"><!-- Do Not remove the classes -->
         <div class="search-fields">
-            <input type="email" placeholder="Email / Username" /><!-- Email Field -->
+            <input type="email" placeholder="Email" id="email" name="email" /><!-- Email Field -->
         </div>
         <div class="search-fields">
-            <input placeholder="Password" type="password"/><!-- Phone Field -->
+            <input placeholder="Password" type="password" id="password" name="password" /><!-- Phone Field -->
         </div>
         <div class="search-button-container">
-			<button class="btn" type="submit">Login</button><!-- Submit button -->
+			<button class="btn" type="submit" id="login_submit">Login</button><!-- Submit button -->
         </div>
     </form>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#login_submit").click(function(e){
+            e.preventDefault();
+            var email = $("#email").val();
+            var password = $("#password").val();            
+            $.ajax({
+            type: "POST",
+            url: 'forms/login_action.php',
+            data: {                                
+                email:email,                
+                password:password
+            },
+            success: function(data)
+            {   
+                console.log(data);
+                // alert(data);
+                if (data =='true') {
+                    window.location.href = 'index.php';
+                }
+                else {
+                    alert('Wrong Username or password');
+                    return false;
+                }
+            }
+        });
+        // $("#login_submit").click(function(e){  
+        //     e.preventDefault();            
+        //     var email = $("#email").val();
+        //     var password = $("#password").val();            
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "forms/login_action.php",
+        //         data: "email="+email+"&password="+password,
+        //         success: function(html){    
+        //         if(html=='true'){                
+        //             window.location="index.php";
+        //         }
+        //         else{
+        //             alert('Wrong Username or password');
+        //             return false;
+        //         }
+        //        }               
+        //       });
+        //     return false;
+        //     });
+
+
+        });
+        
+    });

@@ -394,16 +394,16 @@ jQuery(document).ready(function () {
 	}
 
 
-	// Enable Google Map
-	if (jQuery('#map').length > 0) {
-		initialize();
-	}
+	// // Enable Google Map
+	// if (jQuery('#map').length > 0) {
+	// 	initialize();
+	// }
 
-	// Enable Location auto complete
-	if (jQuery('#location-search-box').length > 0 && jQuery('#map').length == 0) {
-		var input        = document.getElementById('location-search-box');
-		var autocomplete = new google.maps.places.Autocomplete(input);
-	}
+	// // Enable Location auto complete
+	// if (jQuery('#location-search-box').length > 0 && jQuery('#map').length == 0) {
+	// 	var input        = document.getElementById('location-search-box');
+	// 	var autocomplete = new google.maps.places.Autocomplete(input);
+	// }
 
 	//Fullscreen button activation
 	if (jQuery('#fullscreen-btn').length > 0) {
